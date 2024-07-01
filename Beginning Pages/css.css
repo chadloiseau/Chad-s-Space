@@ -4,8 +4,11 @@ h1 {
     color: black;
 }
 p{
-    color: blue;
+    color: crimson;
     text-decoration: underline;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: gray;
+    font-size: 3.5em;
 }
