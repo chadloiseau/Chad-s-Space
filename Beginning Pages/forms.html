@@ -14,12 +14,13 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
         }
-        input {
+        input, select {
             width: 100%;
             height: 45px;
             font-size: 1.5em;
             background-color: lightgray;
             color: white;
+            margin-bottom: 15px;
         }
         textarea {
             width: 100%;
@@ -32,6 +33,23 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.25em;
+        }
+        select {
+            width: 100%;
+            height: 45px;
+            font-size: 1.5em;
+            background-color: lightgray;
+            color: white;
+        }
+        #checks input {
+            width: 15%;
+        }
+        #checks {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            align-items: center;
+            text-align: left;
+            margin: auto;
         }
     </style>
 </head>
@@ -49,8 +67,32 @@
 </br>
         <label for="phoneNumber">Phone Number</label>
         <input type="phone" id="phoneNumber" placeholder="###-###-####">
+<select name="" id="department">
+    <label for="department">Department</label>
+    <option value="Accounting">Accounting</option>
+    <option value="Marketing">Marketing</option>
+    <option value="Admin">Admin</option>
+    <option value="sales">sales</option>
+    <option value="Executive">Executive</option>
+</select>
+    </br>
+<div id="checks">
+    <label for="interests">Interests</label>
+</br><input type="checkbox" id="interests" value="Sports">Sports
+</br> <input type="checkbox" id="interests" value="Music">Music
+</br> <input type="checkbox" id="interests" value="Music">Cooking
+</br> <input type="checkbox" id="interests" value="Music">Hiking
+</br> <input type="checkbox" id="interests" value="Music">Gaming
+</br><label for="officeLocation">Office Location</label>
+</br><input type="radio" id="New York" name="office">New York
+</br><input type="radio" id="Chicago" name="office">Chicago
+</br><input type="radio" id="Salt Lake" name="office">Salt Lake
+</br><input type="radio" id="Plano" name="office">Plano
+</div>
+<label for="doh">Date of Hire</label>
+<input type="date" id="doh /">
 </br>
-<label for="message">Message</label>        
+    <label for="message">Message</label>        
 <textarea rows="10" cols="80" name="message" id="message"placeholder="write me a nice message here"></textarea>
 <button class="sendButton">submit</button>
 
